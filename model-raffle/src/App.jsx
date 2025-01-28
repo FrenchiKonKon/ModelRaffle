@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const App = () => {
   const [participants, setParticipants] = useState([]);
   const [winner, setWinner] = useState(null);
-  const [deadline, setDeadline] = useState(new Date('2025-01-31T23:59:59').getTime());
+  const [deadline, setDeadline] = useState(new Date('2025-01-31T23:00:00Z').getTime());
   const [timeLeft, setTimeLeft] = useState('');
 
   useEffect(() => {
